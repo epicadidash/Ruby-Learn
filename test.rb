@@ -1,8 +1,17 @@
-puts "This is main Ruby Program"
 
-END {
-   puts "Terminating Ruby Program"
-}
-BEGIN {
-   puts "Initializing Ruby Program"
-}
+ BEGIN{class Customer
+    @@no_of_customers = 0
+    def initialize(id, name, addr)
+       @cust_id = id
+       @cust_name = name
+       @cust_addr = addr
+    end
+    def hello
+        puts "Hello Ruby!"
+     end
+ end
+ }
+ END{
+    cust1 = Customer.new("1", "John", "Wisdom Apartments, Ludhiya")
+    cust1.hello
+ }
