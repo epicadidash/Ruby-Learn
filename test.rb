@@ -1,4 +1,8 @@
-print <<EOF
-   This is the first way of creating
-   here document ie. multiple line string.
-EOF
+puts "This is main Ruby Program"
+
+END {
+   puts "Terminating Ruby Program"
+}
+BEGIN {
+   puts "Initializing Ruby Program"
+}
